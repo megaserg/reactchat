@@ -1,0 +1,11 @@
+r.dbCreate("reactchat");
+
+r.db("reactchat").tableCreate("channel");
+r.db("reactchat").table("channel").indexCreate("name");
+
+r.db("reactchat").tableCreate("user");
+r.db("reactchat").table("user").indexCreate("name");
+
+r.db("reactchat").tableCreate("message");
+r.db("reactchat").table("message").indexCreate("createdAt");
+r.db("reactchat").table("message").indexCreate("channelId");
