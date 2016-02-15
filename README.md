@@ -7,28 +7,28 @@ Built with [React](https://facebook.github.io/react/), [Go](https://golang.org/)
 How to start your own instance
 ------------------------------
 
-- Install and start RethinkDB (port 28015):
-  ```
-  $ rethinkdb
-  ```
+- [Install](http://rethinkdb.com/docs/install/) and start RethinkDB (port 28015):
+```
+$ rethinkdb
+```
 - Go to [http://localhost:8080/#dataexplorer](http://localhost:8080/#dataexplorer) and paste the content of `db_initialize.reql` to initialize the database.
 
 - Start the backend (port 4000):
-  ```
-  $ go run *.go
-  ```
+```
+$ go run *.go
+```
 - Install Node dependencies:
-  ```
-  $ npm install
-  ```
+```
+$ npm install
+```
 - Start the frontend with live update (port 4001):
-  ```
-  $ webpack-dev-server --port 4001
-  ```
+```
+$ webpack-dev-server --port 4001
+```
 - Alternatively, build the JS bundle (`assets/bundle.js`):
-  ```
-  $ webpack
-  ```
+```
+$ webpack
+```
 
 - Go to [http://localhost:4001/](http://localhost:4001/)
 
