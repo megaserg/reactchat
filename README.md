@@ -13,7 +13,13 @@ $ rethinkdb
 ```
 - Go to [http://localhost:8080/#dataexplorer](http://localhost:8080/#dataexplorer) and paste the content of `db_initialize.reql` to initialize the database.
 
-- Start the backend (port 4000):
+- Install Go dependencies:
+```
+go get -u github.com/mitchellh/mapstructure
+go get -u github.com/gorilla/websocket
+go get -u github.com/dancannon/gorethink
+```
+- Start the Go backend (port 4000):
 ```
 $ go run *.go
 ```
